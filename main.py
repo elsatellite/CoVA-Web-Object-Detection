@@ -14,6 +14,9 @@ from utils import cmdline_args_parser, print_and_log, set_all_seeds
 parser = cmdline_args_parser()
 args = parser.parse_args()
 
+# test
+
+
 device = torch.device("cuda:%d" % args.device if torch.cuda.is_available() else "cpu")
 set_all_seeds(Constants.SEED)
 
